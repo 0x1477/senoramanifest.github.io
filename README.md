@@ -1,3 +1,1 @@
 # senoramanifest.github.io
-
-testtt
