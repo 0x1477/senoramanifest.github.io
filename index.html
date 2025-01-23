@@ -1,12 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Senora Manifest</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manifest & Lua Generator</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Willkommen auf meiner Website!</h1>
-    <p>Dies ist eine Beispielseite, die über GitHub Pages bereitgestellt wurde.</p>
+  <header>
+    <div class="logo"></div>
+  </header>
+  <main>
+    <h1>Manifest & Lua Generator</h1>
+    <p>Bugs or questions? Feel free to <a href="contact.html">contact us</a>.</p>
+    <p>U want to report an appid that isn’t available? Feel free to <a href="report.html">report it</a>.</p>
+    <button onclick="showGameList()">Game List</button>
+    <div class="form">
+      <input type="text" id="appId" placeholder="Enter your APP ID / URL">
+      <button onclick="submitApp()">Submit</button>
+    </div>
+    <div id="output"></div>
+  </main>
+  <script src="script.js"></script>
 </body>
 </html>
