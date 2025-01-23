@@ -21,6 +21,23 @@
     </div>
     <div id="output"></div>
   </main>
-  <script src="script.js"></script>
+  <script>
+    function submitApp() {
+      const appId = document.getElementById("appId").value.trim(); // App-ID aus dem Eingabefeld
+      if (appId) {
+        // URL zur API des Servers
+        const downloadUrl = `http://localhost:3000/download/${appId}`;
+
+        // Leitet den Browser weiter, um die Datei herunterzuladen
+        window.location.href = downloadUrl;
+      } else {
+        alert("Please enter an App ID.");
+      }
+    }
+
+    function showGameList() {
+      alert("Game List feature is not implemented yet!");
+    }
+  </script>
 </body>
 </html>
